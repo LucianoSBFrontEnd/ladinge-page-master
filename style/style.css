@@ -18,7 +18,7 @@
     /* cores secundary */
     --GrayishBlue: hsl(233, 8%, 62%);
     --LightGrayish: rgb(214, 215, 217);
-    --VeryLightGray: hsl(0, 0%, 98%);
+    --VeryLightGray: hsl(0, 8%, 92%);
     --White: hsl(0, 0%, 100%);
 
     /* cor fundo conteúdo */
@@ -42,7 +42,7 @@ body{
 /* cores de fundo dos conteudo */
 
 .wrapper{ /* bg do meu header */ 
-    background-color: var(--wrapper-bg-header);
+    background-color: white;
 }
 
 .wrapper-gray{ /* bg do meu header */ 
@@ -52,11 +52,10 @@ body{
 
 .wrapper .cabecalho{
     margin: 0 auto;
-    max-width: 1440px;
     height: 100px;
     background-color: var(--White);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     position: relative;
     z-index: 1;
@@ -88,7 +87,7 @@ body{
 }
 
 .wrapper .content{
-    max-width: 1440px;
+    max-width: 1300px;
     margin: 0 auto;
     display: flex;
     background-image: url(../images/bg-intro-desktop.svg);
@@ -109,7 +108,8 @@ body{
 .wrapper .content .left h1{
     font-size: 3em;
     margin-bottom: 20px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: var(--fonts);
+    font-weight: normal;
 }
 
 .wrapper .content .left p{
@@ -130,15 +130,13 @@ body{
 
 .wrapper .content .right{
     width: 50%;
-    
 }
 
 .wrapper .content .right .celular{
-   position: absolute;
-   top: -10px;
+    position: absolute;
+    top: -10px;
     right: 0;
 
-    width: 40%;
 }
 
 /* seção cards bank */
@@ -147,14 +145,17 @@ body{
     background-color: var(--LightGrayish);
 }
 .wrapper-gray .cards-easybank{
-    max-width: 1440px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
 /* div cards bank */
 .wrapper-gray .cards-easybank .cards-bank{
     display: flex;
-    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
     margin-top: 50px;
 }
 
@@ -173,7 +174,7 @@ body{
 }
 
 .wrapper-gray .cards-easybank .card{
-    width: 320px;
+    width: 260px;
     height: 400px;
 
 }
@@ -185,10 +186,66 @@ body{
 
 .wrapper-gray .cards-easybank .card p{
     font-size: 1em;
-    line-height: 1.8em;
+    line-height: 2em;
 }
 
 /* card dos artigos */
+
+.wrapper-white{
+    background-color: var(--White);
+    padding: 20px 0;
+}
+
+.wrap-cards{
+    margin: 0 auto;
+    max-width: 1300px;
+    background-color: #fff;
+}
+
+.wrap-cards h3{
+    font-size: 1.6em;
+    margin: 30px 0 50px 0; 
+}
+
+.wrap-cards .card-artigos{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+.wrap-cards .card-artigos .card{
+    width: 300px;
+    height: 400px;
+    background-color: #ccc;
+    border-radius: 10px 10px 0 0 ;
+    margin-bottom: 50px;
+}
+
+.wrap-cards .card-artigos .card img{
+    width: 100%;
+    border-radius: 10px 10px 0 0 ;
+}
+
+.wrap-cards .card-artigos .card h4{
+    margin: 15px 0;
+    font-size: 1.4em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 300;
+}
+
+.wrap-cards .card-artigos .card .conteudo{
+    padding: 15px;
+}
+
+
+
+
+
+
+
 
 
 
