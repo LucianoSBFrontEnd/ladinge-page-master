@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+
+}
+
+/* font e cores */
+
+:root{
+    /* cores primary */
+    --Dark-Blue: rgb(45, 49, 77);
+    --Lime-Green: rgb(49, 211, 92);
+    --Bright-Cyan: rgb(43, 183, 218) ;  
+
+    /* cores secundary */
+    --GrayishBlue: hsl(233, 8%, 62%);
+    --LightGrayish: rgb(215, 223, 242);
+    --VeryLightGray: hsl(0, 0%, 98%);
+    --White: hsl(0, 0%, 100%);
+
+    /* fonts */
+    --fonts: "Public Sans", sans-serif;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--LightGrayish);
+}
+
+.container{
+    max-width: 1400px;
+
+    background-color: blue;
+    margin: 0 auto;
+}
