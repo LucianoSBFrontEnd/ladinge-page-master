@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
-
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* font e cores */
@@ -14,22 +16,41 @@
 
     /* cores secundary */
     --GrayishBlue: hsl(233, 8%, 62%);
-    --LightGrayish: rgb(215, 223, 242);
+    --LightGrayish: rgb(219, 223, 232);
     --VeryLightGray: hsl(0, 0%, 98%);
     --White: hsl(0, 0%, 100%);
 
+    /* cor fundo conteúdo */
+    --wrapper-bg-header: #fff;
+    --wrapper-gb-gray-meio: #a39f9f;
+    --wrappers-bg-footer: rgb(45, 49, 77);
+
     /* fonts */
     --fonts: "Public Sans", sans-serif;
+    
 }
+
 body{
     width: 100%;
+    
     min-height: 100vh;
     background-color: var(--LightGrayish);
 }
 
-.container{
-    max-width: 1400px;
+/* cores de fundo dos conteudo */
 
-    background-color: blue;
+.wrapper{ /* bg do meu header */ 
+    background-color: var(--wrapper-bg-header);
+}
+
+.wrapper-gray{ /* bg do meu header */ 
+    background-color: var(--LightGrayish);
+}
+
+
+.cabecalho{
     margin: 0 auto;
+    max-width: 1440px;
+    height: 100px;
+    background-color: var(--White);
 }
