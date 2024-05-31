@@ -48,9 +48,25 @@ body{
 }
 
 
-.cabecalho{
+.wrapper .cabecalho{
     margin: 0 auto;
     max-width: 1440px;
     height: 100px;
     background-color: var(--White);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+/* estilo navegação */
+
+.wrapper .cabecalho .navegation .nav-list{
+    display: flex;
+    gap: 40px;
+
+    list-style: none;
+    
+}
+
+
