@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: var(--fonts);
 }
 
 /* font e cores */
@@ -16,7 +17,7 @@
 
     /* cores secundary */
     --GrayishBlue: hsl(233, 8%, 62%);
-    --LightGrayish: rgb(219, 223, 232);
+    --LightGrayish: rgb(214, 215, 217);
     --VeryLightGray: hsl(0, 0%, 98%);
     --White: hsl(0, 0%, 100%);
 
@@ -35,6 +36,7 @@ body{
     
     min-height: 100vh;
     background-color: var(--LightGrayish);
+   
 }
 
 /* cores de fundo dos conteudo */
@@ -53,10 +55,11 @@ body{
     max-width: 1440px;
     height: 100px;
     background-color: var(--White);
-
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    z-index: 1;
 }
 
 /* estilo navegação */
@@ -64,9 +67,136 @@ body{
 .wrapper .cabecalho .navegation .nav-list{
     display: flex;
     gap: 40px;
-
     list-style: none;
+}
+
+.wrapper .cabecalho .navegation .nav-list a{
+    text-decoration: none;
+}
+
+.wrapper .cabecalho .btn{
+    outline: none;
+    border: 0;
+}
+
+.btn a{
+    color: #fff;
+    background-image: linear-gradient(to right, var(--Lime-Green), var(--Bright-Cyan));
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+.wrapper .content{
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    background-image: url(../images/bg-intro-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.wrapper .content .left{
+    width: 50%;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.wrapper .content .left h1{
+    font-size: 3em;
+    margin-bottom: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.wrapper .content .left p{
+    font-size: 22px;
+    line-height: 32px;
+    margin-bottom: 30px;
+    width: 560px;
+}
+
+.wrapper .content .left .btn{
+    outline: none;
+    border: 0;
+}
+
+.wrapper .content .left .btn a{
+    padding: 15px 35px;
+}
+
+.wrapper .content .right{
+    width: 50%;
     
 }
+
+.wrapper .content .right .celular{
+   position: absolute;
+   top: -10px;
+    right: 0;
+
+    width: 40%;
+}
+
+/* seção cards bank */
+
+.wrapper-gray{
+    background-color: var(--LightGrayish);
+}
+.wrapper-gray .cards-easybank{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* div cards bank */
+.wrapper-gray .cards-easybank .cards-bank{
+    display: flex;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+/* fim div cards bank */
+
+.wrapper-gray .cards-easybank h2{
+    margin: 135px 0 30px 0;
+    font-size: 2.4em;
+    font-weight: normal;
+}
+
+.wrapper-gray .cards-easybank p{
+    font-size: 1.2em;
+    line-height: 1.6em;
+    margin-bottom: 2.3em;
+}
+
+.wrapper-gray .cards-easybank .card{
+    width: 320px;
+    height: 400px;
+
+}
+
+.wrapper-gray .cards-easybank .card h3{
+    margin: 20px 0;
+    font-size: 1.5em;
+}
+
+.wrapper-gray .cards-easybank .card p{
+    font-size: 1em;
+    line-height: 1.8em;
+}
+
+/* card dos artigos */
+
+
+
+
+
+
+
+
+
 
 
