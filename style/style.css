@@ -53,6 +53,7 @@ body{
     background-color: var(--LightGrayish);
 }
 
+
 .wrapper .cabecalho{
     margin: 0 auto;
     height: 100px;
@@ -314,6 +315,13 @@ body{
     letter-spacing: 1px;
 }
 
+.wrapper-violet footer .right-footer strong{
+    color: #fff;
+}
+.wrapper-violet footer .right-footer strong a {
+    color: #a7fdb0;
+    font-size: 1rem;
+}
 
 
 
