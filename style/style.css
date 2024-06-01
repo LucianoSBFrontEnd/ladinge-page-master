@@ -13,6 +13,7 @@
     /* cores primary */
     --Dark-Blue: rgb(45, 49, 77);
     --Lime-Green: rgb(49, 211, 92);
+    --Lime-hover: rgb(45, 133, 69);
     --Bright-Cyan: rgb(43, 183, 218) ;  
 
     /* cores secundary */
@@ -218,7 +219,7 @@ body{
 
 .wrap-cards .card-artigos .card{
     width: 300px;
-    height: 400px;
+    height: 480px;
     background-color: #ccc;
     border-radius: 10px 10px 0 0 ;
     margin-bottom: 50px;
@@ -230,30 +231,47 @@ body{
 }
 
 .wrap-cards .card-artigos .card h4{
-    margin: 15px 0;
     font-size: 1.4em;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.wrap-cards .card-artigos .card .h4{
+    margin-bottom: 45px;
+}
+
+
+.wrap-cards .card-artigos .card p{
+    text-align: justify;
+}
+
+.wrap-cards .card-artigos .card h4:hover{
+    color: var(--Lime-hover) ;
+    cursor: pointer;
 }
 
 .wrap-cards .card-artigos .card .conteudo{
-    padding: 15px;
+    padding: 25px;
 }
 
+/* footer */
 
+.wrapper-violet{
+    background-color: var(--wrappers-bg-footer);
+}
 
+.wrapper-violet footer{
+    max-width: 1300px;
+    margin: auto;
+    height: 150px;    
 
+    display: grid;
+    
+    
 
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+.wrapper-violet footer .left-footer{
+    width: 50%;
+}
