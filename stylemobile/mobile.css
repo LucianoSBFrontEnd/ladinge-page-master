@@ -2,6 +2,10 @@
     .wrapper .content .right{
         display: none;
     }
+
+    .wrapper .content .left{
+        align-items: center;
+    }
     
     .wrapper .content .left{
         padding: 3%;
