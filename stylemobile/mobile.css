@@ -84,7 +84,7 @@
     }
 }
 
-@media screen and (max-width: 428px){
+@media screen and (max-width: 468px){
     .wrapper-gray .cards-easybank .cards-bank{
         grid-template-columns: 1fr;
     }
