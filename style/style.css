@@ -65,10 +65,18 @@ body{
 }
 /* mobile menu */
 
-#cabecalho-mobile{
+#btn-menu{
     display: none;
+    background-color: #369d41;
+    padding: 10px 15px;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
 }
 
+#btn-menu a{
+    color: #060606;
+}
 
 /* fim mobile menu */
 
@@ -92,7 +100,6 @@ body{
 .wrapper .cabecalho .btn{
     outline: none;
     border: 0;
-    
 }
 
 .btn a{
